@@ -1,4 +1,4 @@
-package com.co.edwinmarrugo.planning_poker_websocket;
+package com.co.edwinmarrugo.microservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
