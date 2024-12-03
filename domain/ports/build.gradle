@@ -13,9 +13,7 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 
-    //Solo conocerá el dominio
     implementation project(":domain:model")
-    implementation project(":domain:usecase")
 }
 
 test {

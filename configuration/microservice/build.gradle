@@ -10,14 +10,6 @@ version = '0.0.1-SNAPSHOT'
 repositories {
     mavenCentral()
 }
-subprojects {
-    dependencies {
-        compileOnly 'org.projectlombok:lombok'
-        annotationProcessor 'org.projectlombok:lombok'
-        testImplementation platform('org.junit:junit-bom:5.10.0')
-        testImplementation 'org.junit.jupiter:junit-jupiter'
-    }
-}
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
@@ -31,7 +23,10 @@ dependencies {
     //Conocerá todas las capas
     implementation project(":domain:model")
     implementation project(":domain:usecase")
-    implementation project(":adapters:websocket")
+    implementation project(":adapters:persistence")
+    implementation project(":entrypoints:websocket")
+    implementation project(":domain:ports")
+
 }
 
 test {

@@ -12,9 +12,16 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    // Dependencia principal de Mockito
+    testImplementation 'org.mockito:mockito-core:5.5.0'
+
+    // Extensiones para integrar Mockito con JUnit 5
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.5.0'
+
 
     //Solo conocerá el modelo
     implementation project(":domain:model")
+    implementation project(":domain:ports")
 }
 
 test {
