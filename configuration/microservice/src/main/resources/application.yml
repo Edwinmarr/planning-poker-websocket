@@ -1,0 +1,3 @@
+spring:
+  application:
+  name: planning_poker_websocket
